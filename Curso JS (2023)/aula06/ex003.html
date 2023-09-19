@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+
+        body {
+            background-color: rgb(62, 116, 116); /*Cometário em CSS*/
+        }
+
+        h1 {
+            text-align: center;
+            margin: auto;
+            background-color: rgb(136, 136, 136);
+            color: rgb(223, 223, 223);
+            max-width: 400px;
+        }
+
+        p {
+            font-size: 1.8em;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: bolder;
+        }
+    </style>
+</head> 
+<body>
+    <h1>Olá, Mundo!</h1> <!--Isso é um cometário-->
+    <p id="bemvindo">Bem-Vindo </p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número:')) //dado recebido sendo transformado de string para numero
+        var n2 = Number(window.prompt('Digite outro número:')) //prompt sempre recebe o dado como string
+        
+
+
+        var s = n1 + n2
+
+        window.alert('Os valores conjuntos formam o valor ' + n1 + n2)
+        window.alert(`A soma entre os valores ${n1} e ${n2} é ${s}`)
+
+        // (number + number) para adição
+        // (string + string) para concatenação
+    </script>
+</body>
+</html>
